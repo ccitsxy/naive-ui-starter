@@ -15,6 +15,7 @@ provide('theme', theme)
     inline-theme-disabled
     :theme="theme"
   >
+    <n-global-style />
     <router-view />
   </n-config-provider>
 </template>
