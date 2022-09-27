@@ -6,10 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 import Unocss from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
-import {
-  NaiveUiResolver,
-  VueUseComponentsResolver,
-} from 'unplugin-vue-components/resolvers'
+import { NaiveUiResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,12 +15,12 @@ export default defineConfig({
     vueJsx(),
     Unocss(),
     Components({
-      resolvers: [NaiveUiResolver(), VueUseComponentsResolver()],
-    }),
+      resolvers: [NaiveUiResolver(), VueUseComponentsResolver()]
+    })
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
 })

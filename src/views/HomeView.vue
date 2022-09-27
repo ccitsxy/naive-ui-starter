@@ -9,12 +9,15 @@ import type { GlobalTheme } from 'naive-ui'
 const theme = inject('theme') as ShallowRef<GlobalTheme | null | undefined>
 const isDark = useDark({
   onChanged(isDark) {
+    const html = document.getElementsByTagName('html')[0]
     if (isDark) {
+      html.setAttribute('class', 'dark')
       theme.value = darkTheme
     } else {
+      html.removeAttribute('class')
       theme.value = null
     }
-  },
+  }
 })
 const toggleDark = useToggle(isDark)
 const { isFullscreen, toggle: toggleFullscreen } = useFullscreen()
@@ -30,26 +33,12 @@ const { isFullscreen, toggle: toggleFullscreen } = useFullscreen()
           <div v-else class="i-fluent-weather-sunny-24-regular" />
         </template>
       </n-button>
-      <n-button
-        quaternary
-        circle
-        :focusable="false"
-        @click="toggleFullscreen()"
-      >
+      <n-button quaternary circle :focusable="false" @click="toggleFullscreen()">
         <template #icon>
-          <div
-            v-if="isFullscreen"
-            class="i-fluent-full-screen-minimize-24-regular"
-          />
+          <div v-if="isFullscreen" class="i-fluent-full-screen-minimize-24-regular" />
           <div v-else class="i-fluent-full-screen-maximize-24-regular" />
         </template>
       </n-button>
     </n-layout-header>
   </n-layout>
 </template>
-
-<style>
-.dark {
-  color-scheme: dark;
-}
-</style>

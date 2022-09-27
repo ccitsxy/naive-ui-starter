@@ -10,8 +10,8 @@ provide('theme', theme)
 const themeOverrides: GlobalThemeOverrides = {
   common: {
     fontFamily:
-      'Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  },
+      'Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+  }
 }
 </script>
 
