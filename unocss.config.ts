@@ -2,8 +2,8 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetUno,
-  presetWebFonts
+  presetUno
+  // presetWebFonts
   // transformerDirectives,
   // transformerVariantGroup,
 } from 'unocss'
@@ -15,14 +15,14 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       warn: true
-    }),
-    presetWebFonts({
-      fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono'
-      }
     })
+    // presetWebFonts({
+    //   fonts: {
+    //     sans: 'DM Sans',
+    //     serif: 'DM Serif Display',
+    //     mono: 'DM Mono'
+    //   }
+    // })
   ]
   // transformers: [
   //   transformerDirectives(),
