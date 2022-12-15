@@ -6,7 +6,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["naive-ui/volar"]
+    "types": ["unplugin-vue-define-options/macros-global", "naive-ui/volar"]
   },
 
   "references": [

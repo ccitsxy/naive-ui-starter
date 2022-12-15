@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
+import DefineOptions from 'unplugin-vue-define-options/vite'
 import Unocss from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
@@ -13,6 +14,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    DefineOptions(),
     Unocss(),
     Components({
       resolvers: [NaiveUiResolver(), VueUseComponentsResolver()]
