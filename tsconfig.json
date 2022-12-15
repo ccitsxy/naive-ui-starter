@@ -6,7 +6,11 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["unplugin-vue-define-options/macros-global", "naive-ui/volar"]
+    "types": [
+      "unplugin-vue-define-options/macros-global",
+      "@intlify/unplugin-vue-i18n/messages",
+      "naive-ui/volar"
+    ]
   },
 
   "references": [

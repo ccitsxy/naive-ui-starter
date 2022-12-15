@@ -15,10 +15,12 @@
     "naive-ui": "^2.34.2",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.152",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^16.18.9",
     "@vitejs/plugin-vue": "^4.0.0",
