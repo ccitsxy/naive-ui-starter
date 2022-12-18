@@ -11,7 +11,7 @@ import 'uno.css'
 const app = createApp(App)
 
 const i18n = createI18n({
-  locale: 'zh_CN',
+  locale: 'en',
   messages
 })
 
